@@ -1,0 +1,43 @@
+body.dark {
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+body.dark .navbar,
+body.dark footer {
+    background: #161b22;
+}
+
+body.dark .project-card {
+    background: #161b22;
+}
+
+body.dark .skill-tag {
+    background: #222;
+}
+
+body.dark .hero {
+    background: linear-gradient(135deg, #0d1117, #161b22);
+}
+
+body.dark .navbar nav a {
+    color: #e6edf3;
+}
+
+body.dark .navbar nav a:hover {
+    color: #58a6ff;
+}
+
+body.dark .btn-outline {
+    border-color: #58a6ff;
+    color: #58a6ff;
+}
+
+body.dark .btn-outline:hover {
+    background: #58a6ff;
+    color: #000;
+}
+
+body.dark .skill-tile {
+    background: #161b22;
+}

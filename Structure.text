@@ -1,0 +1,34 @@
+portfolio-website/
+│
+├── index.html                # Main homepage
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css         # Main styles (light mode)
+│   │   ├── dark.css          # Dark mode styles
+│   │   └── animations.css   # Smooth animations
+│   │
+│   ├── js/
+│   │   ├── main.js           # General JS (menu, scroll, etc.)
+│   │   ├── dark-mode.js      # Dark mode toggle logic
+│   │   └── animations.js    # Scroll & hover animations
+│   │
+│   ├── images/
+│   │   ├── profile.jpg       # Your photo
+│   │   ├── project1.png
+│   │   ├── project2.png
+│   │   └── project3.png
+│   │
+│   └── fonts/                # Optional custom fonts
+│
+├── sections/                 # (Optional but clean)
+│   ├── about.html
+│   ├── skills.html
+│   ├── projects.html
+│   └── contact.html
+│
+├── resume/
+│   └── Ashton_Dsouza_Resume.pdf
+│
+├── README.md                 # GitHub description
+└── favicon.ico

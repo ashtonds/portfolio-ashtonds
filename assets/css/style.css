@@ -1,0 +1,269 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #007bff;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* ===== Hero ===== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+.hero h1 span {
+    color: #007bff;
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero h3 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.hero p {
+    margin: 15px 0 30px;
+    font-size: 1.1rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+.btn-outline:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* ===== Sections ===== */
+.section {
+    padding: 100px 60px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+/* ===== Skills ===== */
+.skill-category {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    background: #111;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-5px);
+    background: #007bff;
+}
+
+/* ===== Projects ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== Contact ===== */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    margin-top: 50px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .section {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+}
+
+.skills-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 20px;
+    justify-content: start;
+    margin-bottom: 40px;
+}
+
+.skill-tile {
+    width: 140px;
+    height: 140px;
+
+    background: #111;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-tile img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-tile span {
+    font-size: 0.9rem;
+    color: #fff;
+    line-height: 1.2;
+    max-width: 100%;
+}
+
+
+.skill-tile:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,123,255,0.4);
+}
